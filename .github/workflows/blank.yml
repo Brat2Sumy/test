@@ -34,5 +34,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          /home/ec2-user/manual_deploy.sh
+      - name: script
+        run: /home/ec2-user/manual_deploy.sh
+        shell: bash
     
