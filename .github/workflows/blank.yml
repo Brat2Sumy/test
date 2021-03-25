@@ -34,8 +34,11 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-      - name: script
-        run:
-          shell: bash
-            working-directory: /home/ec2-user/manual_deploy.sh
-    
+          cd /home/ec2-user
+          export APP_PORT=3000
+          export DB_USER=postgres
+          export DB_HOST=11.0.1.184
+          export DB_NAME=ops_test
+          export DB_PASSWORD=qwerty
+          export DB_PORT=5432
+          npm run start
