@@ -27,5 +27,5 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: |
     cd /home/ec2-user/
-    manual_deploy.sh
+    script: manual_deploy.sh
 
