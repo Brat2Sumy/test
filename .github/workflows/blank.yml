@@ -34,7 +34,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          cd /home/ec2-user
+          
           export APP_PORT=3000
           export DB_USER=postgres
           export DB_HOST=11.0.1.184
