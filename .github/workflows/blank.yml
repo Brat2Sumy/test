@@ -13,5 +13,10 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
           script: |
-            sudo su
-            systemctl start app
+            export APP_PORT=3000
+            export DB_USER=postgres
+            export DB_HOST=11.0.1.184
+            export DB_NAME=ops_test
+            export DB_PASSWORD=qwerty
+            export DB_PORT=5432
+            npm run start
