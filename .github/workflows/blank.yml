@@ -13,5 +13,5 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
           script: |
-          sudo su
-          systemctl start app
+            sudo su
+            systemctl start app
