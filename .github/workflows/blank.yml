@@ -13,5 +13,5 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
       - name: use sctipt
-        uses: vargiuscuola/gen-sh-unittest@v1.0    
-          run: ./manual_deploy.sh
+        uses: lafernando/github-action-bash@v1.0    
+          run: manual_deploy.sh
