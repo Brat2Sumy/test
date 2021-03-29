@@ -12,6 +12,4 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
-      - name: use sctipt
-        uses: lafernando/github-action-bash@v1.0    
-          run: manual_deploy.sh
+          script: ls
