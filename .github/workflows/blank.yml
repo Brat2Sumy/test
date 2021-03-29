@@ -12,5 +12,6 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
-      - uses: vargiuscuola/gen-sh-unittest@v1.0    
-          script: "./manual_deploy.sh"
+      - name: use sctipt
+        uses: vargiuscuola/gen-sh-unittest@v1.0    
+          run: "./manual_deploy.sh"
