@@ -15,4 +15,4 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
           whoami
-          manual_deploy.sh
+          echo "Hello"
