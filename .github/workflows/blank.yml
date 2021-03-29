@@ -6,7 +6,7 @@ jobs:
     name: test
     runs-on: ubuntu-latest
     steps:
-      - neme: Use script
+      - name: Use script
         uses: bewuethr/shellcheck-action@v2.1.2
       - name: test
         uses: appleboy/ssh-action@master
