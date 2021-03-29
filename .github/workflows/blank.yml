@@ -6,13 +6,12 @@ jobs:
     name: test
     runs-on: ubuntu-latest
     steps:
+      - neme: Use script
+        uses: bewuethr/shellcheck-action@v2.1.2
       - name: test
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
-          script: ls
-      - neme: Use script
-        uses: bewuethr/shellcheck-action@v2.1.2
           run: /home/ec2-user/manual_deploy.sh
