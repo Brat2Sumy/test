@@ -13,4 +13,4 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
       - uses: vargiuscuola/gen-sh-unittest@v1.0    
-          script: manual_deploy.sh
+          script: "./manual_deploy.sh"
