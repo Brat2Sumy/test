@@ -14,4 +14,4 @@ jobs:
           key: ${{ secrets.KEY }}
       - name: use sctipt
         uses: vargiuscuola/gen-sh-unittest@v1.0    
-          run: "./manual_deploy.sh"
+          run: ./manual_deploy.sh
