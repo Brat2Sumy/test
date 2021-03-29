@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Use script
-        uses: bewuethr/shellcheck-action@v2.1.2
+        uses: vargiuscuola/gen-sh-unittest@v1.0
       - name: test
         uses: appleboy/ssh-action@master
         with:
