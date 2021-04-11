@@ -1,1 +1,18 @@
+name: test command
+on: [push]
+jobs:
 
+  build:
+    name: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: test
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
+          script: |
+            cd /home/ec2-user/
+            git clone https://github.com/Brat2Sumy/test.git
+            npm run start
