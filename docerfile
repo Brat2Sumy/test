@@ -1,6 +1,6 @@
 FROM node:12-alpine
 
-WORKDIR /home/ec2-user/
+WORKDIR /home/ec2-user/test
 
 COPY package*.json ./
 
@@ -11,7 +11,7 @@ EXPOSE 3000
 COPY . .
 
 
-CMD cd /home/ec2-user && \
+CMD cd /home/ec2-user/test && \
 export APP_PORT=${{ secrets.APP_PORT }} && \
 export DB_USER=${{ secrets.DB_USER }} && \
 export DB_HOST=${{ secrets.DB_HOST }} && \
