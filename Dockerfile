@@ -18,4 +18,5 @@ export DB_HOST=11.0.1.184 && \
 export DB_NAME=ops_test && \
 export DB_PASSWORD=qwerty && \
 export DB_PORT=5432 && \
+npm install && \
 npm run start
