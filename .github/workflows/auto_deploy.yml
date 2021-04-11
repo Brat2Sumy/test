@@ -14,6 +14,6 @@ jobs:
           key: ${{ secrets.KEY }}
           script: |
             git clone https://github.com/Brat2Sumy/test.git /home/ec2-user/test
+            docker build -t /home/ec2-user/test
             cd /home/ec2-user/test
-            docker build -t app
             npm run start
