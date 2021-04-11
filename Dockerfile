@@ -1,4 +1,4 @@
-FROM node:12-alpine
+FROM node:15
 
 WORKDIR /home/ec2-user/test
 
