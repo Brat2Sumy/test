@@ -14,4 +14,5 @@ jobs:
           key: ${{ secrets.KEY }}
           script: |
             git clone https://github.com/Brat2Sumy/test.git /home/ec2-user/test
+            cd /home/ec2-user/test
             npm run start
