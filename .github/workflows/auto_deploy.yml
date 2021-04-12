@@ -13,6 +13,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
           script: |
+            rm -rf /home/ec2-user/test
             git clone https://github.com/Brat2Sumy/test.git /home/ec2-user/test
             docker stop $(docker ps -a -q)
             docker rm $(docker ps -a -q)
