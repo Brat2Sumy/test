@@ -19,4 +19,4 @@ jobs:
             docker rm $(docker ps -a -q)
             docker build -t backend /home/ec2-user/test
             docker run -p 3000:3000 -td backend
-            docker update --restart unless-stopped -t backend
+            docker update --restart unless-stopped $(docker ps -a -q)
